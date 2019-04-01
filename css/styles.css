@@ -5,18 +5,27 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 button {
-  padding: 10px;
+  border: 8px solid;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   font-family: 'Alice', serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
+  padding: 10px;
+}
+
+button:active {
+  /* background-color: #3e8e41; */
+  box-shadow: 0 5px rgba(0,0,0,0.6);
+  transform: translateY(4px);
 }
 
 .gryffindor {

@@ -8,6 +8,7 @@ function assignHouse() {
   var houseNum;
   var houseName;
   var houseColors;
+  var houseLogoSrc;
 
   houseNum = Math.floor(Math.random() * 4) + 1;
 
@@ -34,6 +35,8 @@ function assignHouse() {
 
   applyHouseColors();
 
+  changeHouseLogo();
+
   document.querySelector("#house-announcement").textContent = ("You have been assigned to House " + houseName + "!");
 
 
@@ -52,7 +55,7 @@ function clearHouseColors() {
 
   var doc = document.querySelector(".body");
   var btn = document.querySelector("#house-assignment");
-  
+
   doc.classList.remove("gryffindor");
   doc.classList.remove("hufflepuff");
   doc.classList.remove("ravenclaw");
@@ -62,5 +65,13 @@ function clearHouseColors() {
   btn.classList.remove("hufflepuff");
   btn.classList.remove("ravenclaw");
   btn.classList.remove("slytherin");
+
+}
+
+function changeHouseLogo() {
+
+  var img = document.querySelector("#house-logo");
+
+  img.src = "img/" + houseColorsClass + "-logo.jpg";
 
 }
