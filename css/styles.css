@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  color: red;
+  font-family: 'Alice', serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  padding: 10px;
+  font-family: 'Alice', serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.gryffindor {
+  background-color: maroon;
+  color: gold;
+}
+
+.hufflepuff {
+  background-color: gold;
+  color: black;
+}
+
+.ravenclaw {
+  background-color: navy;
+  color: #804a00;
+}
+
+.slytherin {
+  background-color: #0b4203;
+  color: silver;
+}
